@@ -1,22 +1,24 @@
-# 🧩 Agile Final Project – Sprint Planning and Execution
+# 🧩 Agile Final Project – Sprint Planning & Execution
 
-This repository contains my final project for the **Agile Development** course.  
-It demonstrates the complete Scrum workflow — from creating user stories and refining the product backlog to sprint planning, execution, and tracking — using **GitHub Projects** (or **ZenHub**).
+This repository contains my **Final Project** for the Agile Development course.  
+It demonstrates how to apply **Scrum and Agile principles** using **GitHub Projects** to manage and simulate a sprint — from backlog creation to sprint execution and burndown tracking.
 
 ---
 
-## 📘 Overview
+## 📘 Project Overview
+
 In this project, I played the roles of:
 - **Product Owner** – Created and prioritized user stories based on stakeholder requirements.  
-- **Scrum Master** – Organized sprint planning, managed backlog refinement, and facilitated team progress tracking.  
-- **Developer** – Simulated sprint execution by moving stories across the Kanban board.
+- **Scrum Master** – Organized the sprint milestone, refined the backlog, and tracked progress.  
+- **Developer** – Executed and simulated sprint activities by moving stories across the Kanban board.
 
-The goal is to develop the **back-end product catalog** for an e-commerce website.  
-This catalog supports creating, retrieving, updating, deleting, and liking/disliking products, hosted on the cloud with automated deployment.
+The main objective was to develop the **back-end product catalog** for an e-commerce website.  
+The catalog allows users to create, retrieve, update, and delete products (CRUD operations),  
+as well as like or dislike products. The system is hosted in the cloud with automated deployment features.
 
 ---
 
-## 📋 Stakeholder Requirements
+## 🧠 Stakeholder Requirements
 
 | # | Requirement |
 |---|--------------|
@@ -24,104 +26,114 @@ This catalog supports creating, retrieving, updating, deleting, and liking/disli
 | 2 | Need the ability to retrieve a product from the catalog |
 | 3 | Need the ability to update a product in the catalog |
 | 4 | Need the ability to delete a product from the catalog |
-| 5 | Need the ability to Like a product |
-| 6 | Need the ability to Dislike a product |
+| 5 | Need the ability to Like a product in the catalog |
+| 6 | Need the ability to Dislike a product in the catalog |
 | 7 | Need the ability to list all products in the catalog |
-| 8 | Need the ability to query a subset of products |
+| 8 | Need the ability to query a subset of products in the catalog |
 | 9 | Must be hosted in the cloud |
 | 10 | Must have automation to deploy new changes to the cloud |
 
 ---
 
-## 🧠 Agile Artifacts
+## 🗂️ Agile Artifacts
 
-### 🗂️ Product Backlog
-All 10 stakeholder requirements were transformed into **user stories** and added to the Kanban board.  
-Each story was written using the industry-standard Agile format to ensure clarity and user focus:
+### 🗃️ Product Backlog
+All 10 stakeholder requirements were converted into **user stories** and added to the Kanban board.  
+Each story followed the standard user story format:
 
-> **As a `<type of user>`, I need `<a goal>`, so that `<reason or value>`.**
+> **As a [type of user]**,  
+> **I need [a goal or feature]**,  
+> **So that [reason or value]**.
 
-This structure connects every feature to a real user need and its business value, ensuring traceability and purpose in development.  
-Below are examples of finalized user stories:
-
-- 🧩 **Create Product**  
-  *As a catalog administrator, I need the ability to create and manage products in the catalog so that I can maintain an up-to-date list of items available for sale.*
-
-- ❤️ **Like Product**  
-  *As a customer, I need the ability to like products so that I can show interest in items and help the system recommend similar ones.*
-
-- ☁️ **Cloud Hosting**  
-  *As a system engineer, I need the service to be hosted in the cloud so that it is scalable and always available to users.*
-
-All stories follow this format to communicate intent, outcomes, and measurable goals, ensuring clarity during backlog refinement and sprint planning.
+All stories were labeled according to their type:  
+- `enhancement` → new or improved functionality  
+- `technical debt` → infrastructure or automation work  
 
 ---
 
-### 🔧 Labels
-To maintain clarity and organization, stories were tagged with labels:
-- `enhancement` → for new or improved features  
-- `technical debt` → for remaining or incomplete work from previous sprints  
-
----
-
-### 🏁 Sprint Setup
+### 🧩 Sprint Setup
 - **Sprint Name:** Sprint 1  
 - **Duration:** 2 weeks  
-- **Included Stories:** Top 4 user stories from the Product Backlog  
-- **Story Point Estimates:** Assigned collaboratively during sprint planning  
+- **Milestone Goal:** Implement core catalog CRUD features (Create, Retrieve, Update, Delete).  
+- **Total Story Points:** 19  
+
+| Story | Story Points | Label |
+|--------|---------------|--------|
+| Create a product | 8 | enhancement |
+| Retrieve a product | 5 | enhancement |
+| Update a product | 3 | enhancement |
+| Delete a product | 3 | enhancement |
 
 ---
 
 ## 🏗️ Sprint Execution
 
-The sprint was executed in simulation mode to reflect a real Scrum process:
-1. The top story was assigned to me and moved to **In Progress**.  
-2. Upon completion, it was moved to **Review/QA** for verification.  
-3. The next story was started while the previous one moved to **Done**.  
-4. The sprint concluded with one story remaining **In Progress** to simulate ongoing development.  
+The sprint simulation was conducted as follows:
+1. The first story (*Create a product*) was assigned to myself and moved to **In Progress**.  
+2. After completion, it was moved to **Review/QA**.  
+3. The second story (*Retrieve a product*) was started and moved to **In Progress**, while the first was marked **Done**.  
+4. The cycle continued with *Update* and *Delete* stories, leaving one story **In Progress** at the end.  
 
-This sequence represents a realistic sprint flow that balances progress tracking, workload visibility, and sprint continuity.
+This simulated a real sprint environment with continuous flow and parallel work.
 
 ---
 
 ## 📉 Burndown Chart
-A **Burndown Chart** was generated to visualize the number of story points completed versus remaining throughout the sprint.  
-This provides a clear view of the team’s velocity and overall sprint progress.  
 
-*(You can insert your Burndown Chart screenshot here for visual reference.)*
+A **Burndown Chart** was generated under *Insights → Charts* in GitHub Projects.
+
+- **Layout:** Stacked Area  
+- **X-axis:** Sprint  
+- **Group by:** Status  
+- **Y-axis:** Sum of field → Estimate  
+- **Filter:** `sprint:Sprint 1`  
+
+The chart shows:
+- ✅ 13 Story Points **Done**  
+- 🔧 3 Story Points **In Progress**  
+- 🗂️ 3 Story Points still in **Sprint Backlog**
+
+This visualization confirms consistent progress toward the sprint goal.
 
 ---
 
 ## 📊 Kanban Board
-👉 [Click here to view the Kanban Board](https://github.com/ghazal-dib/agile-final-project/projects)
 
-**Columns Used:**
-- **Icebox** – Low-priority or future stories  
-- **Product Backlog** – Stories prepared for upcoming sprints  
-- **Sprint Backlog** – Stories selected for the active sprint  
-- **In Progress** – Stories currently being developed  
-- **Review/QA** – Stories under review or testing  
-- **Done** – Completed and verified stories  
+👉 [**View the Kanban Board Here**](https://github.com/users/ghazal-dib/projects/2/views/1)
 
-This board structure reflects an effective Agile workflow, ensuring transparency, traceability, and smooth collaboration across roles.
-
----
-
-## 🧾 Key Learnings and Takeaways
-- A well-groomed backlog ensures efficient sprint planning and execution.  
-- Writing stories in a consistent format improves understanding across all roles.  
-- Defining sprint goals keeps the team focused and aligned.  
-- Burndown charts are essential for monitoring progress and adjusting workload.  
-- Clear communication between **Product Owner**, **Scrum Master**, and **Developers** drives success in Agile projects.  
+The board includes six columns:
+- **Icebox** – Deferred stories or ideas  
+- **Product Backlog** – Stories ready for prioritization  
+- **Sprint Backlog** – Stories committed for Sprint 1  
+- **In Progress** – Ongoing development tasks  
+- **Review/QA** – Stories under verification  
+- **Done** – Completed stories  
 
 ---
 
-## 🏁 Conclusion
-This project demonstrates how Agile and Scrum practices can be applied in real-world development environments using **GitHub Projects** or **ZenHub**.  
-Through structured backlog management, sprint planning, and burndown tracking, this project showcases the power of iterative delivery and team collaboration in achieving project goals.
+## 🏁 Sprint Summary
+
+- **Sprint Duration:** 2 weeks  
+- **Planned Velocity:** 19 story points  
+- **Completed:** 13 SP (68%)  
+- **In Progress:** 3 SP (16%)  
+- **Pending:** 3 SP (16%)  
+
+**Sprint Goal Achieved:** ✅ Core CRUD functionality delivered and validated through simulation.
 
 ---
 
 ## ✍️ Author
 **Ghazal Dib**  
 GitHub: [@ghazal-dib](https://github.com/ghazal-dib)
+
+---
+
+## 💡 Key Takeaways
+- A well-structured **product backlog** ensures clarity and prioritization.  
+- **Sprint planning** aligns workload with realistic team velocity.  
+- **Burndown charts** provide clear visual feedback on progress.  
+- Agile tools in GitHub make project tracking smooth and transparent.
+
+---
+
